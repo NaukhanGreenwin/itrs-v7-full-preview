@@ -143,6 +143,9 @@ body { margin:0; }
 .mg-open .mg-h2 { font-size: clamp(1.4rem, 1.2rem + .7vw, 1.8rem); }
 
 /* forms (kept as plain HTML) */
+.mg-captcha:empty { display: none; }
+.mg-status:empty { display: none; }
+.mg-status { font-size: 15px !important; color: var(--ink) !important; }
 form { display: grid; gap: 14px; }
 form label { display: block; font-size: 13.5px; font-weight: 560; margin-bottom: 6px; color: inherit; }
 form input:not([type=hidden]):not([type=checkbox]):not([type=radio]), form textarea, form select { width: 100%; box-sizing: border-box; height: 48px; padding: 0 14px; border: 1px solid #c9d0d8; background: #fff; color: var(--ink); font: inherit; font-size: 16px; border-radius: 2px; }
@@ -165,6 +168,13 @@ form input[type=hidden], form input[name="_gotcha"], form input[tabindex="-1"] {
 .mg-formcard { background: #fff; color: var(--ink); padding: 28px; }
 .mg-formcard p { color: var(--slate) !important; }
 .mg-formcard a { color: var(--steel) !important; }
+
+/* interactive tools (islands): live tool replaces the static copy once it mounts */
+#mg-island { display: block; }
+.mg-has-island > :not(#mg-island) { display: none !important; }
+.mg-col.mg-has-island { max-width: none; padding: 0; }
+main.mg-island-page { padding-top: 105px; }
+main.mg-island-page > .wrap { max-width: none; padding-inline: 0; }
 
 /* home: old copy folded under the v7 home */
 .mg-more { background: #fff; border-top: 1px solid var(--line); }

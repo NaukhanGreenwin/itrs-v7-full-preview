@@ -30,4 +30,40 @@
   ;[].forEach.call(document.querySelectorAll('form[data-preview]'), function (f) {
     f.addEventListener('submit', function (e) { e.preventDefault(); alert('Preview only: this form is disabled on the preview site.') })
   })
+  /* Production forms: same contract as the old React forms (CaptchaWidget + fetch to the relay).
+     reCAPTCHA v2 loads on first interaction only; tokens are single-use, so reset after each attempt. */
+  var SITEKEY = '6Let2qMtAAAAAEuXi-DzvEmP1_oq2nHXF8ezQpKG', RC = 'https://www.google.com/recaptcha/api.js?render=explicit'
+  ;[].forEach.call(document.querySelectorAll('form[action*="itrs-form-relay"]:not([data-preview])'), function (f) {
+    var btn = f.querySelector('button[type=submit], button:not([type]), [type=submit]')
+    var box = document.createElement('div'); box.className = 'mg-captcha'
+    btn ? btn.parentNode.insertBefore(box, btn) : f.appendChild(box)
+    var status = document.createElement('p'); status.className = 'mg-status'; status.setAttribute('role', 'status'); f.appendChild(status)
+    var wid = null, armed = false
+    function render() { if (window.grecaptcha && wid === null) grecaptcha.ready(function () { if (wid === null) wid = grecaptcha.render(box, { sitekey: SITEKEY }) }) }
+    function arm() {
+      if (armed) return; armed = true
+      if (window.grecaptcha) return render()
+      var s = document.querySelector('script[src="' + RC + '"]')
+      if (!s) { s = document.createElement('script'); s.src = RC; s.async = true; document.head.appendChild(s) }
+      s.addEventListener('load', render)
+    }
+    ;['focusin', 'pointerdown', 'touchstart'].forEach(function (ev) { f.addEventListener(ev, arm, { passive: true }) })
+    f.addEventListener('submit', function (e) {
+      e.preventDefault()
+      var body = new FormData(f)
+      if (!String(body.get('message') || '').trim()) {
+        body.set('message', 'Request from ' + location.pathname + '. Name: ' + (body.get('name') || [body.get('firstName'), body.get('lastName')].filter(Boolean).join(' ')) + '. Phone: ' + (body.get('phone') || '') + '. Email: ' + (body.get('email') || '') + '.')
+      }
+      if (btn) btn.disabled = true
+      status.textContent = 'Sending…'
+      fetch(f.action, { method: 'POST', body: body, headers: { Accept: 'application/json' } })
+        .then(function (r) { return r.json().catch(function () { return {} }).then(function (j) { return { ok: r.ok, j: j } }) })
+        .then(function (x) {
+          status.textContent = x.ok ? 'Thanks. A technician from our Vaughan office will get back to you within one business day.' : (x.j.error || 'There was a problem sending your request. Please call (289) 582-9930 instead.')
+          if (x.ok) f.reset()
+        })
+        .catch(function () { status.textContent = 'There was a problem sending your request. Please call (289) 582-9930 instead.' })
+        .then(function () { if (btn) btn.disabled = false; try { wid !== null && grecaptcha.reset(wid) } catch (_) {} })
+    })
+  })
 })()
