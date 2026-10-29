@@ -389,3 +389,5 @@ main.mg-island-page > .wrap { max-width: none; padding-inline: 0; }
 .mg-fbot nav a, .mg-flinks a { display: inline-block; padding: 4px 0; }
 .mg-tap { display: inline-block; padding: 4px 0; }
 .mg-local .mg-prose p + p { margin-top: 1em; }
+.mg-what-in > div { min-width: 0; }
+.mg-prose table td, .mg-prose table th { padding: 8px 10px; border-bottom: 1px solid rgba(11,20,32,.12); text-align: left; vertical-align: top; }
