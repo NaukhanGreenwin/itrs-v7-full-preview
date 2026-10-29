@@ -1150,4 +1150,59 @@
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
+  <!-- Microsoft 365 forensic investigation -->
+  <url>
+    <loc>https://itrapidsupport.com/cyber-forensics/microsoft-365/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://itrapidsupport.com/cyber-forensics/microsoft-365/business-email-compromise/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://itrapidsupport.com/cyber-forensics/microsoft-365/account-takeover-aitm/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://itrapidsupport.com/cyber-forensics/microsoft-365/inbox-rules-forwarding/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://itrapidsupport.com/cyber-forensics/microsoft-365/unified-audit-log/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://itrapidsupport.com/cyber-forensics/microsoft-365/oauth-consent-abuse/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://itrapidsupport.com/cyber-forensics/microsoft-365/sharepoint-onedrive-exfiltration/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://itrapidsupport.com/cyber-forensics/microsoft-365/entra-sign-in-mfa-bypass/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://itrapidsupport.com/cyber-forensics/microsoft-365/evidence-insurers-counsel/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset> 
