@@ -285,7 +285,7 @@ main.mg-island-page > .wrap { max-width: none; padding-inline: 0; }
 .mg-flow { background: var(--mist); }
 .mg-flow .wrap { padding-top: 72px; padding-bottom: 80px; }
 .mg-flow .mg-h2 { margin-top: 16px; }
-.mg-flow ol { list-style: none; padding: 0; margin: 36px 0 0; display: grid; gap: 28px; position: relative; }
+.mg-flow ol { list-style: none; padding: 0; margin: 36px 0 0; display: grid; grid-template-columns: 1fr 1fr; gap: 28px 20px; position: relative; }
 @media (min-width: 900px) { .mg-flow ol { grid-template-columns: repeat(4, 1fr); gap: 32px; } .mg-flow ol::before { content: ''; position: absolute; left: 28px; right: 12%; top: 28px; height: 1px; background: #c9d0d8; } }
 .mg-flow li { position: relative; }
 .mg-step { position: relative; z-index: 1; display: inline-flex; width: 56px; height: 56px; align-items: center; justify-content: center; border-radius: 50%; background: #fff; border: 1px solid #c9d0d8; color: var(--steel); }
