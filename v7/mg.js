@@ -16,8 +16,9 @@
   })
   document.addEventListener('pointerdown', function (e) { if (!e.target.closest('.mg-dd')) close() })
   document.addEventListener('keydown', function (e) { if (e.key === 'Escape') { close(); toggle(false) } })
-  var b = document.querySelector('.mg-burger'), dr = document.getElementById('mg-drawer')
-  function toggle(on) { if (!b) return; b.setAttribute('aria-expanded', on ? 'true' : 'false'); dr.hidden = !on; document.documentElement.style.overflow = on ? 'hidden' : '' }
+  var b = document.querySelector('.mg-burger'), dr = document.getElementById('mg-menu')
+  function toggle(on) { if (!b || !dr) return; b.setAttribute('aria-expanded', on ? 'true' : 'false'); b.setAttribute('aria-label', on ? 'Close menu' : 'Open menu'); dr.hidden = !on; document.documentElement.classList.toggle('mg-menu-open', on); document.documentElement.style.overflow = on ? 'hidden' : '' }
+  dr && dr.addEventListener('click', function (e) { if (e.target.closest('a')) toggle(false) })
   b && b.addEventListener('click', function () { toggle(dr.hidden) })
   function openHash() {
     if (!location.hash) return
