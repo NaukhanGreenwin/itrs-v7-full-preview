@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="400" viewBox="0 0 500 400" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">Secure technology partner network</title>
+  <desc id="desc">A central shield linked to cloud, server, laptop and database systems.</desc>
+  <defs>
+    <linearGradient id="panel" x1="48" y1="35" x2="445" y2="365" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1E293B"/>
+      <stop offset="1" stop-color="#0F172A"/>
+    </linearGradient>
+    <linearGradient id="shield" x1="211" y1="135" x2="298" y2="272" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EF4444"/>
+      <stop offset="1" stop-color="#991B1B"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect x="22" y="22" width="456" height="356" rx="40" fill="url(#panel)" stroke="#334155" stroke-width="2"/>
+  <circle cx="250" cy="200" r="118" fill="#EF4444" fill-opacity="0.05"/>
+  <circle cx="250" cy="200" r="82" stroke="#475569" stroke-dasharray="6 9"/>
+  <g stroke="#64748B" stroke-width="2">
+    <path d="M190 159L135 112"/><path d="M310 159L365 112"/>
+    <path d="M180 225L116 274"/><path d="M320 225L384 274"/>
+  </g>
+  <g fill="#EF4444" filter="url(#glow)">
+    <circle cx="190" cy="159" r="4"/><circle cx="310" cy="159" r="4"/>
+    <circle cx="180" cy="225" r="4"/><circle cx="320" cy="225" r="4"/>
+  </g>
+  <g>
+    <rect x="83" y="77" width="104" height="70" rx="14" fill="#111827" stroke="#64748B" stroke-width="2"/>
+    <path d="M111 122C103 122 97 116 97 108C97 100 103 94 111 94C114 87 121 83 129 83C141 83 150 91 152 102C160 102 166 108 166 116C166 124 160 130 152 130H111" stroke="#CBD5E1" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g>
+    <rect x="313" y="76" width="104" height="72" rx="14" fill="#111827" stroke="#64748B" stroke-width="2"/>
+    <rect x="334" y="93" width="62" height="11" rx="5.5" fill="#334155"/><circle cx="343" cy="98.5" r="3" fill="#22C55E"/>
+    <rect x="334" y="112" width="62" height="11" rx="5.5" fill="#334155"/><circle cx="343" cy="117.5" r="3" fill="#22C55E"/>
+    <rect x="334" y="131" width="62" height="7" rx="3.5" fill="#334155"/><circle cx="343" cy="134.5" r="2.5" fill="#22C55E"/>
+  </g>
+  <g>
+    <rect x="67" y="250" width="102" height="68" rx="10" fill="#111827" stroke="#64748B" stroke-width="2"/>
+    <rect x="80" y="262" width="76" height="43" rx="4" fill="#1E293B"/>
+    <path d="M55 326H181" stroke="#94A3B8" stroke-width="8" stroke-linecap="round"/>
+    <path d="M103 274L114 285L136 270" stroke="#EF4444" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g>
+    <ellipse cx="385" cy="265" rx="46" ry="15" fill="#111827" stroke="#64748B" stroke-width="2"/>
+    <path d="M339 265V309C339 317 360 324 385 324C410 324 431 317 431 309V265" fill="#111827" stroke="#64748B" stroke-width="2"/>
+    <path d="M339 287C339 295 360 302 385 302C410 302 431 295 431 287" stroke="#64748B" stroke-width="2"/>
+    <ellipse cx="385" cy="265" rx="34" ry="8" fill="#334155"/>
+  </g>
+  <path d="M250 126L310 151V199C310 240 285 272 250 286C215 272 190 240 190 199V151L250 126Z" fill="url(#shield)" stroke="#FCA5A5" stroke-width="2"/>
+  <path d="M226 202L243 219L278 181" stroke="white" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

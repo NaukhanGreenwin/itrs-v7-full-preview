@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" width="800" height="520" role="img" aria-labelledby="t d">
+<title id="t">Vaughan service area around the IT Rapid Support office at 7810 Keele Street</title>
+<desc id="d">Schematic map, not to scale: the office on Keele Street in Concord, with Woodbridge to the west across Highway 400, Maple to the north on Keele Street, Kleinburg to the northwest, the Vaughan Metropolitan Centre beside Highway 7, and Thornhill to the east at Yonge Street.</desc>
+<rect width="800" height="520" rx="18" fill="#f8fafc"/>
+<g font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+<path d="M60 70 H740 V470 H60 Z" fill="#fff" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="6 6"/>
+<text x="72" y="96" font-size="15" fill="#64748b" font-weight="600">City of Vaughan</text>
+<line x1="300" y1="70" x2="300" y2="470" stroke="#94a3b8" stroke-width="10" stroke-linecap="round"/>
+<text x="284" y="460" font-size="13" fill="#64748b" transform="rotate(-90 284 460)">Highway 400</text>
+<line x1="470" y1="70" x2="470" y2="470" stroke="#e2e8f0" stroke-width="7"/>
+<text x="480" y="92" font-size="13" fill="#64748b">Keele St</text>
+<line x1="700" y1="70" x2="700" y2="470" stroke="#e2e8f0" stroke-width="7"/>
+<text x="664" y="92" font-size="13" fill="#64748b">Yonge St</text>
+<line x1="60" y1="345" x2="740" y2="345" stroke="#94a3b8" stroke-width="8"/>
+<text x="72" y="337" font-size="13" fill="#64748b">Highway 7</text>
+<line x1="60" y1="200" x2="740" y2="200" stroke="#e2e8f0" stroke-width="6"/>
+<text x="72" y="192" font-size="13" fill="#64748b">Major Mackenzie Dr</text>
+<line x1="60" y1="470" x2="740" y2="470" stroke="#94a3b8" stroke-width="6"/>
+<text x="600" y="492" font-size="13" fill="#64748b">Steeles Ave (Toronto boundary)</text>
+<g font-size="15" font-weight="600" fill="#0f172a">
+<circle cx="160" cy="135" r="7" fill="#475569"/><text x="174" y="140">Kleinburg</text>
+<circle cx="470" cy="200" r="7" fill="#475569"/><text x="484" y="225">Maple</text>
+<circle cx="140" cy="400" r="7" fill="#475569"/><text x="154" y="405">Woodbridge</text>
+<circle cx="380" cy="345" r="7" fill="#475569"/><text x="318" y="378">Vaughan Metropolitan Centre</text>
+<circle cx="660" cy="420" r="7" fill="#475569"/><text x="572" y="446">Thornhill</text>
+<circle cx="230" cy="270" r="7" fill="#475569"/><text x="120" y="262">Vellore Village</text>
+</g>
+<circle cx="470" cy="318" r="16" fill="#dc2626"/><circle cx="470" cy="318" r="6" fill="#fff"/>
+<rect x="500" y="262" width="196" height="58" rx="10" fill="#0f172a"/>
+<text x="514" y="286" font-size="15" font-weight="700" fill="#fff">IT Rapid Support</text>
+<text x="514" y="307" font-size="13" fill="#e2e8f0">7810 Keele St, Concord</text>
+<text x="72" y="500" font-size="12" fill="#64748b">Schematic, not to scale</text>
+</g></svg>

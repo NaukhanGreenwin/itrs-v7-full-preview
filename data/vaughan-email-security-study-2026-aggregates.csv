@@ -1,0 +1,29 @@
+# IT Rapid Support - Vaughan business email security study. DNS collected 2026-10-04 (UTC 13:07). Aggregates only; no individual domains. https://itrapidsupport.com/resources/vaughan-business-email-security-study-2026/
+metric,count,denominator,percent
+"Domains scanned (unique, after exclusions)",354,354,100.0
+"Mail-enabled domains (MX present, not null MX)",290,354,81.9
+SPF: -all (hard fail),83,290,28.6
+SPF: ~all (soft fail),153,290,52.8
+SPF: ?all (neutral),10,290,3.4
+SPF: more than one SPF record (invalid),10,290,3.4
+SPF: redirect=,1,290,0.3
+SPF: no all mechanism,1,290,0.3
+SPF: no record,32,290,11.0
+SPF: any record published,258,290,89.0
+DMARC: p=reject,14,290,4.8
+DMARC: p=quarantine,38,290,13.1
+DMARC: p=none (monitor only),96,290,33.1
+DMARC: more than one record (invalid),1,290,0.3
+DMARC: no record,141,290,48.6
+DMARC: any record published,149,290,51.4
+DMARC: enforcing (quarantine or reject),52,290,17.9
+DMARC p=none without rua reporting address,64,96,66.7
+Neither SPF nor DMARC,28,290,9.7
+Platform share: Google Workspace (by MX),80,290,27.6
+DMARC enforcing among Google Workspace domains,,80,7.5
+Platform share: Other (by MX),117,290,40.3
+DMARC enforcing among Other domains,,117,17.1
+Platform share: Microsoft 365 (by MX),88,290,30.3
+DMARC enforcing among Microsoft 365 domains,,88,29.5
+Platform share: GoDaddy (by MX),5,290,1.7
+DMARC enforcing among GoDaddy domains,,5,0.0
