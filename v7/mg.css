@@ -127,6 +127,7 @@ body { margin:0; }
 .mg-sec > .mg-prose { padding: 0 0 30px; }
 .mg-faq { padding: 26px 0 10px; }
 .mg-faq > h2 { margin-bottom: 8px; }
+.mg-faq--bare { margin-top: 36px; border-bottom: 1px solid var(--line); padding-top: 8px; }
 .mg-q { border-top: 1px solid var(--line); }
 .mg-faq > .mg-q:first-of-type { border-top: 0; }
 .mg-q > summary { list-style: none; cursor: pointer; padding: 15px 30px 15px 0; position: relative; }
@@ -134,6 +135,7 @@ body { margin:0; }
 .mg-q > summary::after { content: '+'; position: absolute; right: 4px; top: 13px; font-size: 20px; font-weight: 300; color: var(--steel); }
 .mg-q[open] > summary::after { content: '–'; }
 .mg-q > summary h3, .mg-q > summary h4 { font-family: var(--sans); font-weight: 560; font-size: 16.5px; line-height: 1.4; margin: 0; color: var(--ink); letter-spacing: -.005em; }
+.mg-qtag { display: inline-block; margin-left: 8px; font-family: var(--mono); font-size: 10.5px; letter-spacing: .08em; text-transform: uppercase; color: var(--steel); vertical-align: 2px; }
 .mg-a { padding: 0 0 18px; font-size: 16.5px; line-height: 1.65; color: var(--body); }
 .mg-a > * + * { margin-top: .8em; }
 
