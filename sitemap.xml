@@ -1205,6 +1205,43 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <!-- Private client -->
+  <url>
+    <loc>https://itrapidsupport.com/services/high-net-worth/family-office-it/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://itrapidsupport.com/services/high-net-worth/estate-technology/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://itrapidsupport.com/services/high-net-worth/private-aviation-technology/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://itrapidsupport.com/services/high-net-worth/personal-cybersecurity/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://itrapidsupport.com/services/high-net-worth/smart-home-automation/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://itrapidsupport.com/services/high-net-worth/family-device-privacy/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <!-- v7 practice pages -->
   <url>
     <loc>https://itrapidsupport.com/industries/</loc>
